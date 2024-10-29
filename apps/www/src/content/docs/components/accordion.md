@@ -28,12 +28,12 @@ module.exports = {
     extend: {
       keyframes: {
         'accordion-down': {
-          from: { height: 0 },
-          to: { height: 'var(--radix-accordion-content-height)' },
+          '0%': { height: '0' },
+          '100%': { height: 'var(--radix-accordion-content-height)' },
         },
         'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: 0 },
+          '0%': { height: 'var(--radix-accordion-content-height)' },
+          '100%': { height: '0' },
         },
       },
       animation: {
